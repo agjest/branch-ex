@@ -1,0 +1,44 @@
+---
+title: "Git branching in RStudio"
+bibliography: citeRnotebook.bib
+lang: en-gb
+csl: apa-no-ampersand.csl
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+library(renv)
+#consent(provided = TRUE)
+renv::init()
+library(knitr)
+library(rmarkdown)
+```
+
+## Introduction
+
+In this short note we will be discussing the advantages with reproducible research and also some software that might help us in accomplishing this goal. We will also discuss possible hinderances one might experience and also shortcomings of our proposed solution. The solution we will be proposing will use the R statistical programming language and some packages expanding tha capabilities of R. 
+
+## Short Literature Review
+
+The ideas of @gentleman2003, which were implemented by @gentleman2005 when parts of @golub1999 was reproduced as a *compendium* [@gentleman2003], i.e. reproducible research.
+The @rstudioteam2020 implementation of `R Notebook`is a modern implementation of the same basic ideas.
+R Notebooks achieves this by using the @rcoreteam2020 packages `knitr`[@xie2014] and `rmarkdown` [@allaire2020].
+The process is documented in @xie2015, @xie2020, @xie2018 and @wickham2016.
+R Notebooks support mathematical typesetting via $\LaTeX $, see [@lamport1986] and also [@knuth1986], and can be converted to different output formats with the help of Pandoc [@zotero-94].
+
+Futher tips might be found in @tierneya.
+@ram2013 gives a nice discussion of how git can facilitate greater reproducibility and increased transparency in science.
+
+## Discussion
+
+Ok, we have reproducability provided the recipient have exactly the same version of R and packages that we got when the research was done.
+
+```{r r-session}
+sessionInfo()
+```
+
+## Conclusion
+
+## References
+<div id="refs"></div>

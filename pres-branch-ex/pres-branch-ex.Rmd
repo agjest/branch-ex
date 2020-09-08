@@ -1,0 +1,117 @@
+---
+title: "Branching in Git"
+author: "ag"
+date: "9/04/2020"
+footer: "Copyright (c) 2020, Arnstein Gjestland"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Create new project
+
+Note: **Use renv with this project** and **Open in new session**
+
+![New project](new-project.png){width=70%}
+
+## Setup R Notebook
+
+![Setup R Notebook](RNotebook-setup.png){width=70%}
+
+## First commit master
+
+![First commit master](first-commit.png){width=70%}
+
+## New branch Introduction
+
+![Branch Introduction](Branch-introduction.png)
+
+## Switched to new branch Introduction
+
+![Branch created](branch-created.png){width=70%}
+
+## First commit Introduction
+
+![First commit Introduction](first-commit-introduction.png){width=70%}
+
+>- Move some screengrabs to a subdirectory.
+>- Should probably rather be done on master
+
+## Second commit Introduction
+
+![Second commit Introduction](second-commit-introduction.png){width=70%}
+
+## Third commit in Introduction
+
+![Results Third commit Introduction](third-commit-introduction.png){width=70%}
+
+## Invoke Shell from cogwheel
+
+![Shell](cogwheel-shell.png)
+
+## Shell
+
+- `gir checkout master`
+    + switch over to master
+- `git merge Introduction`
+    + merge the Introduction branch into master
+
+![Git merge branch](git-merge-branch.png){width=60%}
+
+## Switched back to master
+
+![Back to master](back-to-master.png){width=70%}
+
+## New branch literature review
+
+![Lit-review](lit-review.png){width=70%}
+
+## Switch from lit-review to master
+
+![Lit review to master](lit-review-to-master.png){width=70%}
+
+## Merge lit-review into master
+
+This is the real (first) merge.
+
+![First merge of lit-review into master](merge-lit-review.png){width=70%}
+
+## Had to fake lit-review
+
+Had forgotten screengrab and had to return to lit-review branch to get the picture.
+
+Resulted in a merge conflict
+
+## Merge conflict
+
+>- **Do not panic**
+>- We have set up RStudio as editor
+>     + If you have `vi` you might as well panic now ;-)
+>- Just edit the text to how you want it. Delete `<<<<<<< HEAD`, `======` and `>>>>>>>` and save.
+
+## Merge conflict
+
+>- ![Merge conflict](merge-conflict.png){width=70%}
+
+## Merge conflict
+
+>- ![Merge conflict in list](merge-conflict-in-list.png){width=70%}
+
+## New branch Discussion
+
+Starting Discussion. Try to use `renv`.
+
+![Branch Discussion](discussion-rev-init.png){width=70%}
+
+## Merge discussion into master
+
+1) Save and commit work in Discussion
+1) Switch back to master
+1) Invoke Shell
+1) Do: `git merge Discussion`
+
+## Merge discussion into master
+
+![Merge Discussion into master](git-merge -discusssion-into-master.png){width=70%}
